@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>JavaScript Topics</h2>
+            <ul id="topic-list">
+                <li class="topic">
+                    <span onclick="toggleSubtopics(this)">JavaScript Fundamentals</span>
+                    <ul class="subtopics">
+                        <li onclick="loadContent('hello_world')">Hello, world!</li>
+                        <li onclick="loadContent('code_structure')">Code structure</li>
+                        <li onclick="loadContent('use_strict')">The modern mode, "use strict"</li>
+                        <li onclick="loadContent('variables')">Variables</li>
+                        <li onclick="loadContent('data_types')">Data types</li>
+                        <li onclick="loadContent('interaction')">Interaction: alert, prompt, confirm</li>
+                        <li onclick="loadContent('type_conversions')">Type Conversions</li>
+                        <li onclick="loadContent('basic_operators')">Basic operators, maths</li>
+                        <li onclick="loadContent('comparisons')">Comparisons</li>
+                        <li onclick="loadContent('conditional_branching')">Conditional branching: if, '?' </li>
+                        <li onclick="loadContent('logical_operators')">Logical operators</li>
+                        <li onclick="loadContent('nullish_coalescing')">Nullish coalescing operator '??'</li>
+                        <li onclick="loadContent('loops')">Loops: while and for</li>
+                        <li onclick="loadContent('switch_statement')">The "switch" statement</li>
+                        <li onclick="loadContent('functions')">Functions</li>
+                        <li onclick="loadContent('function_expressions')">Function expressions</li>
+                        <li onclick="loadContent('arrow_functions')">Arrow functions, the basics</li>
+                    </ul>
+                </li>
+                <li class="topic">
+                    <span onclick="toggleSubtopics(this)">JavaScript Specials</span>
+                    <ul class="subtopics">
+                        <li onclick="loadContent('code_quality')">Code quality</li>
+                        <li onclick="loadContent('debugging')">Debugging in the browser</li>
+                        <li onclick="loadContent('coding_style')">Coding Style</li>
+                        <li onclick="loadContent('comments')">Comments</li>
+                        <li onclick="loadContent('ninja_code')">Ninja code</li>
+                        <li onclick="loadContent('automated_testing')">Automated testing with Mocha</li>
+                        <li onclick="loadContent('polyfills')">Polyfills and transpilers</li>
+                    </ul>
+                </li>
+                <li class="topic">
+                    <span onclick="toggleSubtopics(this)">Objects and Data Structures</span>
+                    <ul class="subtopics">
+                        <li onclick="loadContent('objects_basics')">Objects: the basics</li>
+                        <li onclick="loadContent('object_references')">Object references and copying</li>
+                        <li onclick="loadContent('garbage_collection')">Garbage collection</li>
+                        <li onclick="loadContent('object_methods')">Object methods, "this"</li>
+                        <li onclick="loadContent('constructor')">Constructor, operator "new"</li>
+                        <li onclick="loadContent('optional_chaining')">Optional chaining '?.'</li>
+                        <li onclick="loadContent('symbol_type')">Symbol type</li>
+                        <li onclick="loadContent('object_conversion')">Object to primitive conversion</li>
+                        <li onclick="loadContent('methods_of_primitives')">Methods of primitives</li>
+                        <li onclick="loadContent('numbers')">Numbers</li>
+                        <li onclick="loadContent('strings')">Strings</li>
+                        <li onclick="loadContent('arrays')">Arrays</li>
+                        <li onclick="loadContent('array_methods')">Array methods</li>
+                        <li onclick="loadContent('iterables')">Iterables</li>
+                        <li onclick="loadContent('map_set')">Map and Set</li>
+                        <li onclick="loadContent('weakmap_weakset')">WeakMap and WeakSet</li>
+                        <li onclick="loadContent('object_keys')">Object.keys, values, entries</li>
+                        <li onclick="loadContent('destructuring')">Destructuring assignment</li>
+                        <li onclick="loadContent('date_time')">Date and time</li>
+                        <li onclick="loadContent('json_methods')">JSON methods, toJSON</li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2 id="content-title">Welcome to JavaScript Guide</h2>
+            <div id="content-body">Select a topic to learn more about JavaScript.</div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
